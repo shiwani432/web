@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <title></title>
+ <style>
+ body{
+ margin:0;
+ padding:0;
+ background-size:cover;
+ font-family:Sans-Serif;
+ height:100vh;
+ width:80px;
+ background-image: url("64.jpg");  
+ 
+ }
+ .loginbox{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ width:600px;
+ height: 670px;
+ padding:80px 40px;
+ box-sizing:border-box;
+ background-color:rgba(50, 50, 51, 0.55);
+ }
+ 
+ 
+ h1{
+ padding:0;
+ margin-top:-40px;
+ text-align:center;
+ color:#ff7200;
+ text-decoration:underline;
+ 
+ }
+ 
+ .lblfirstname,.lblLastname,.lblpass,.lblemail,.lblnumber,.lblconfirmpass{
+ font-weight:bold;
+ color:#fff;
+ }
+ 
+.txtfirstname,.txtLastname,.txtemail,.txtnumber,.txtpass,.txtsubmit,.txtconfirmpass{
+ width:100%;
+ margin-bottom:20px;
+ 
+ }
+ .txtfirstname,.txtLastname,.txtemail,.txtnumber,.txtpass,.txtconfirmpass{
+ border:none;
+ border-bottom:3px solid #fff;
+ outline:none;
+ height:40px;
+ color:#fff;
+ font-size:16px;
+ background-color:transparent;
+ } 
+ ::placeholder{
+ color:rgba(255,255,255,.5);
+ }
+ 
+ .btnsubmit {
+ width: 257px;
+ height: 30px;
+ outline-style: none;
+ outline-color: invert;
+ font-size: 18px;
+ color: #fff;
+ cursor: pointer;
+ border-radius: 20px;
+ transition: .3s ease-in-out;
+ border-style: none;
+ border-color: inherit;
+ border-width: medium;
+ margin-left: 0px;
+ background-color: #ff7200;
+ }
+ .btnsubmit:hover{
+ background-color:rgb(255,217,9);
+ }
+ .btnforgot{
+ font-size:12px;
+ font-weight:600;
+ text-decoration:none;
+ color:#fff;
+ 
+ }
+ .btnforgot:hover{
+ text-decoration:underline;
+ color:blue;
+ }
+ .radio{
+ font-weight:bold;
+ color:#fff;
+ width:100%;
+ margin-bottom:20px;
+ outline:none;
+ height:40px;
+ font-size:16px;
+ background-color:transparent;
+ 
+ }
+ .Radio1,.Radio2,.Radio3{
+ cursor: pointer;
+ }
+ 
+ </style>
+</head>
+<body>
+ <form id="form1" runat="server">
+ 
+ <div class="loginbox">
+ 
+ <h1>Registration</h1>
+ 
+ 
+ <Label Class="lblfirstname">First Name</Label>
+
+ <input type="text" Class="txtfirstname" placeholder="Enter First 
+name" id="Textbox1">
+
+ <Label Class="lblLastname">Last Name</Label>
+
+ <input type="text" Class="txtLastname" placeholder="Enter Last 
+name" id="Textbox2">
+
+ <Label Class="lblemail">Email</Label>
+ 
+    <input type="text" Class="txtemail" placeholder="Enter email"
+id="Textbox3">
+
+ <Label Class="lblnumber">Phone Number</Label>
+ 
+    <input type="text" Class="txtnumber" placeholder="Enter Phone 
+number" id="Textbox4" TextMode="Phone"></label>
+
+<Label Class="lblpass">Password</Label>
+ 
+ 
+    <input type="text" Class="txtpass" placeholder="************"
+id="Textbox5">
+
+ <Label Class="lblconfirmpass" >Confirm Password</Label>
+
+ <input type="text" Class="txtconfirmpass"placeholder="************" id="Textbox6">
+
+ <div class="radio">
+ <input id="Radio1" type="radio">Male
+ <input id="Radio2" type="radio">Female
+ <input id="Radio3" type="radio">Other
+ 
+ <br /><br />
+ <Button Class="btnsubmit" runat="server">Sign in </Button>
+
+ <Button Class="btnsubmit" runat="server">Reset</Button>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ </div>
+ </form>
+</body>
+</html>
